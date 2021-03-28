@@ -7,7 +7,6 @@ const express = require('express'),
 /**
  * Аll routes start with '/task'
  **/
-//todo please fix the auth middleware later
 
 // create task
 taskRouter.post('/', auth, validator('task-create'), taskController.create);
